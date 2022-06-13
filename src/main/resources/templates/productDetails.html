@@ -26,7 +26,7 @@
 <!--                            <li class="list-group-item"><p th:text="'Назначение '+${el.getAppointments().getName()}"/>-->
 <!--                            </li>-->
                             <form th:action="@{'/productInOrder/add/'+${el.id}}" method="post">
-                                <input th:type="quantity" name="number" value="1" min="1" max="2147483647"><br>
+                                <input th:type="number" name="quantity" value="1" min="1" max="2147483647"><br>
                                 <button th:type="submit" class="btn btn-primary">Добавить в корзину</button>
                             </form>
 <!--                            <a href="#" class="btn btn-primary">Добавить в корзину</a>-->
