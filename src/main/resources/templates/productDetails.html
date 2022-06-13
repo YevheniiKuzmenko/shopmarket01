@@ -20,7 +20,7 @@
                             <h2 th:text="${el.name}"/>
                             <li class="list-group-item"><p th:text="'вес ' + ${el.weight}+'kg'"/></li>
                             <li class="list-group-item"><p th:text="'цена '+${el.price} + '$'"/></li>
-<!--                            <li class="list-group-item"><p th:text="'описание '+${el.specification}"/></li>-->
+                           <li class="list-group-item"><p th:text="'описание '+${el.specification}"/></li>
 <!--                            <li class="list-group-item"><p th:text="'Торгова Марка '+${el.getTrademark().getName()}"/>-->
 <!--                            </li>-->
 <!--                            <li class="list-group-item"><p th:text="'Назначение '+${el.getAppointments().getName()}"/>-->
@@ -30,7 +30,7 @@
                                 <button th:type="submit" class="btn btn-primary">Добавить в корзину</button>
                             </form>
 <!--                            <a href="#" class="btn btn-primary">Добавить в корзину</a>-->
-                            <a href="#" class="btn btn-primary">Описание</a>
+<!--                             <a href="#" class="btn btn-primary">Описание</a> -->
                             <form th:action="'/product/delete/' +${el.id}">
                                 <button class="btn btn-primary" type="submit"> Удалить</button>
                             </form>
